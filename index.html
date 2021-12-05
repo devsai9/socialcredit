@@ -7,13 +7,27 @@
         text-align: center;
       }
     </style>
+    
+    <script>
+      function socialCreditsq1() {
+        console.log("Q1 Changed")
+      }
+      
+      function socialCreditsq2() {
+        console.log("Q2 Changed")
+      }
+      
+      function socialCreditsq3() {
+        console.log("Q3 Changed")
+      }
+    </script>
   </head>
   <body>
     <h1>Social Credit Counter</h1>
     <p>Social Credit: </p>
     <br>
     <h3>Q1: Do you like China?</h3>
-    <form>
+    <form onchange="socialCreditsq1()">
       <input type="radio" id="q1_hate" name="q1" value="I hate China">
       <label for="hate">I hate China</label><br>
       <input type="radio" id="q1_love" name="q1" value="I love China">
@@ -22,7 +36,7 @@
     <br>
     <br>
     <h3>Q2: Is Taiwan a country</h3>
-    <form>
+    <form onchange="socialCreditsq2()">
       <input type="radio" id="q2_no" name="q2" value="No">
       <label for="no">No</label><br>
       <input type="radio" id="q2_idk" name="q2" value="I don't even know what Taiwan is">
@@ -33,7 +47,7 @@
     <br>
     <br>
     <h3>Q3: Did anything happen in Tiananmen Square in 1989?</h3>
-    <form>
+    <form onchange="socialCreditsq3()">
       <input type="radio" id="q3_no" name="q3" value="No">
       <label for="no">No</label><br>
       <input type="radio" id="q3_yes" name="q3" value="Yes">

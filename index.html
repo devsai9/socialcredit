@@ -14,7 +14,8 @@
         console.log("Q1 Changed");
         
         if (document.getElementById('q1_hate').checked) {
-          document.getElementById('socialcredit_p').innerHTML = "Social Credit: " + social_credits-999999;
+          q1_social_credits_bad = social_credits - 999999;
+          document.getElementById('socialcredit_p').innerHTML = "Social Credit: " + social_credits;
         }
       }
     </script>

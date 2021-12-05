@@ -9,27 +9,43 @@
     </style>
     
     <script>
-      var social_credits = 0;
+      var social_credits = "0";
       function socialCredits() {
         console.log("Q1 Changed");
         
         if (document.getElementById('q1_hate').checked) {
-          social_credits = -999999;
+          social_credits = "-999999";
           document.getElementById('socialcredit_p').innerHTML = "Social Credit(s): " + social_credits;
         }
         
         if (document.getElementById('q1_love').checked) {
-          social_credits = 999999;
+          social_credits = "999999";
           document.getElementById('socialcredit_p').innerHTML = "Social Credit(s): " + social_credits;
         }
-        
+        // ------------------------------------------------------------------------------------------------
         if (document.getElementById('q2_yes').checked) {
           if (document.getElementById('q1_hate').checked) {
-            document.getElementById('socialcredit_p').innerHTML = "Social Credit(s): -∞";
+            social_credits = "-∞";
+            document.getElementById('socialcredit_p').innerHTML = "Social Credit(s): " + social_credits;
           }
-          social_credits = -999999;
-          document.getElementById('socialcredit_p').innerHTML = "Social Credit(s): " + social_credits;
+          if (document.getElementById('q1_love').checked) {
+            social_credits = "-999999";
+            document.getElementById('socialcredit_p').innerHTML = "Social Credit(s): " + social_credits;
+          }
         }
+        
+        if (document.getElementById('q2_idk.checked') {
+           if (document.getElementById('q1_hate').checked) {
+            social_credits = "-999999";
+            document.getElementById('socialcredit_p').innerHTML = "Social Credit(s): " + social_credits;
+          }
+          if (document.getElementById('q1_love').checked) {
+            social_credits = "∞";
+            document.getElementById('socialcredit_p').innerHTML = "Social Credit(s): " + social_credits;
+          }
+        }
+      
+        
       }
     </script>
   </head>

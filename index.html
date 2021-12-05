@@ -9,22 +9,19 @@
     </style>
     
     <script>
-      function socialCreditsq1() {
-        console.log("Q1 Changed")
-      }
-      
-      function socialCreditsq2() {
-        console.log("Q2 Changed")
-      }
-      
-      function socialCreditsq3() {
-        console.log("Q3 Changed")
+      var social_credits = 0
+      function socialCredits() {
+        console.log("Q1 Changed");
+        
+        if (document.getElementById('q1_hate').checked) {
+          document.getElementById('socialcredit_p').innerHTML = "Social Credit: " + social_credits-999999;
+        }
       }
     </script>
   </head>
   <body>
     <h1>Social Credit Counter</h1>
-    <p>Social Credit: </p>
+    <p id="socialcredit_p">Social Credit(s): </p>
     <br>
     <h3>Q1: Do you like China?</h3>
     <form onchange="socialCreditsq1()">

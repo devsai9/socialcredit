@@ -10,7 +10,7 @@
     
     <script>
       var social_credits = "0";
-      function socialCredits() {
+      function social_Credits() {
         console.log("Q1 Changed");
         
         if (document.getElementById('q1_hate').checked) {
@@ -54,7 +54,7 @@
     <p id="socialcredit_p">Social Credit(s): </p>
     <br>
     <h3>Q1: Do you like China?</h3>
-    <form onchange="socialCredits()">
+    <form onchange="social_Credits()">
       <input type="radio" id="q1_hate" name="q1" value="I hate China">
       <label for="hate">I hate China</label><br>
       <input type="radio" id="q1_love" name="q1" value="I love China">
@@ -63,7 +63,7 @@
     <br>
     <br>
     <h3>Q2: Is Taiwan a country</h3>
-    <form onchange="socialCredits()">
+    <form onchange="social_Credits()">
       <input type="radio" id="q2_no" name="q2" value="No">
       <label for="no">No</label><br>
       <input type="radio" id="q2_idk" name="q2" value="I don't even know what Taiwan is">
@@ -74,7 +74,7 @@
     <br>
     <br>
     <h3>Q3: Did anything happen in Tiananmen Square in 1989?</h3>
-    <form onchange="socialCredits()">
+    <form onchange="social_Credits()">
       <input type="radio" id="q3_no" name="q3" value="No">
       <label for="no">No</label><br>
       <input type="radio" id="q3_yes" name="q3" value="Yes">

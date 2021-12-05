@@ -14,12 +14,12 @@
         console.log("Q1 Changed");
         
         if (document.getElementById('q1_hate').checked) {
-          social_credits += -999999;
+          social_credits = -999999;
           document.getElementById('socialcredit_p').innerHTML = "Social Credit: " + social_credits;
         }
         
         if (document.getElementById('q1_love').checked) {
-          social_credits += 999999;
+          social_credits = 999999;
           document.getElementById('socialcredit_p').innerHTML = "Social Credit: " + social_credits;
         }
       }
